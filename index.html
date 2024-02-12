@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fafafa;
+    }
+
+    .login-container {
+        max-width: 350px;
+        margin: 50px auto;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .instagram-logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .instagram-logo img {
+        width: 200px;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"],
+    .login-form button {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .login-form button {
+        background-color: #3897f0;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .login-form button:hover {
+        background-color: #357ae8;
+    }
+
+    .signup-link {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .signup-link a {
+        color: #3897f0;
+        text-decoration: none;
+    }
+
+    .signup-link a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="instagram-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/175px-Instagram_logo.svg.png" alt="Instagram Logo">
+        </div>
+        <form class="login-form" action="process_login.php" method="post">
+            <input type="text" placeholder="Nombre de usuario" name="username" required>
+            <input type="password" placeholder="Contraseña" name="password" required>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+        <div class="signup-link">
+            ¿No tienes una cuenta? <a href="#">Regístrate</a>
+        </div>
+    </div>
+</body>
+</html>
